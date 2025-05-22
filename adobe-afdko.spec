@@ -1,5 +1,4 @@
-%global archivename afdko
-%global antl4_ver 4.9.3
+%define	antl4_ver 4.9.3
 
 Summary:	Adobe Font Development Kit for OpenType
 Name:		adobe-afdko
@@ -11,7 +10,7 @@ Release:	1
 # python/afdko/resources/ is BSD-3-Clause
 License:	Apache-2.0 AND BSD-3-Clause AND ANTLR-PD AND Python-2.0.1
 URL:		https://github.com/adobe-type-tools/afdko
-Source0:	https://github.com/adobe-type-tools/%{archivename}/releases/download/%{version}/%{archivename}-%{version}.tar.gz
+Source0:	https://github.com/adobe-type-tools/afdko/releases/download/%{version}/afdko-%{version}.tar.gz
 # Source0-md5:	2a3ba9bb2583be0d744220411a8f24f1
 Source1:	https://www.antlr.org/download/antlr4-cpp-runtime-%{antl4_ver}-source.zip
 # Source1-md5:	eafa4fef583e12e963062882773461be
@@ -27,7 +26,7 @@ tools for building OpenType font files from PostScript and TrueType
 font data.
 
 %prep
-%setup -q -n %{archivename}-%{version}
+%setup -q -n afdko-%{version}
 %patch -P0 -p1
 
 cp %{SOURCE1} .
