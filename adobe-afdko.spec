@@ -4,6 +4,7 @@ Summary:	Adobe Font Development Kit for OpenType
 Name:		adobe-afdko
 Version:	4.0.1
 Release:	1
+Group:		Applications/Publishing
 # ExternalAntlr4Cpp.cmake is BSD-3-clause
 # c/makeotf/makeotf_lib/build/hotpccts/pccts/* is ANTLR-PD
 # afdko-3.6.1/python/afdko/pdflib/pdfgen.py is Python-2.0.1
@@ -19,6 +20,7 @@ BuildRequires:	cmake
 BuildRequires:	libuuid-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	utf8cpp-devel
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Adobe Font Development Kit for OpenType (AFDKO). The AFDKO is a set of
