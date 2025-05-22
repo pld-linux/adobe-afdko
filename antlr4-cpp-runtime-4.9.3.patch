@@ -1,0 +1,21 @@
+diff -ur afdko-4.0.1.orig/CMakeLists.txt afdko-4.0.1/CMakeLists.txt
+--- afdko-4.0.1.orig/CMakeLists.txt	2024-01-17 05:55:45.000000000 +0530
++++ afdko-4.0.1/CMakeLists.txt	2024-06-19 22:56:00.654124920 +0530
+@@ -18,7 +18,7 @@
+ endif()
+ message(STATUS "Build type is ${CMAKE_BUILD_TYPE}")
+ 
+-set(CMAKE_CXX_STANDARD 11)
++set(CMAKE_CXX_STANDARD 17)
+ 
+ # scikit-build
+ if(SKBUILD)
+@@ -34,7 +34,7 @@
+ # encounter compiler problems and need to make small edits to compensate. Start
+ # with the Antlr project's sources, e.g.
+ # https://www.antlr.org/download/antlr4-cpp-runtime-4.9.3-source.zip
+-# set(ANTLR4_ZIP_REPOSITORY "/path_to_antlr4_archive/a4.zip")
++ set(ANTLR4_ZIP_REPOSITORY "${CMAKE_CURRENT_SOURCE_DIR}/antlr4-cpp-runtime-4.9.3-source.zip")
+ 
+ add_definitions(-DANTLR4CPP_STATIC)
+ set(ANTLR4_WITH_STATIC_CRT OFF)
