@@ -3,7 +3,7 @@
 Summary:	Adobe Font Development Kit for OpenType
 Name:		adobe-afdko
 Version:	4.0.1
-Release:	1
+Release:	2
 Group:		Applications/Publishing
 # ExternalAntlr4Cpp.cmake is BSD-3-clause
 # c/makeotf/makeotf_lib/build/hotpccts/pccts/* is ANTLR-PD
